@@ -1,6 +1,6 @@
-# 3D Ising Model Monte Carlo Simulation
+# 2D & 3D Ising Model Monte Carlo Simulation
 
-A Python implementation of the **3D Ising Model** using **Markov Chain Monte Carlo (MCMC)** and the **Metropolis-Hastings Algorithm**. This project simulates phase transitions and computes thermodynamic properties near critical temperatures.
+A Python implementation of the **2D and 3D Ising Model** using **Markov Chain Monte Carlo (MCMC)** and the **Metropolis-Hastings Algorithm**. This project simulates phase transitions and computes thermodynamic properties near critical temperatures.
 
 ![Simulation Results](plots/simulation_result.png)
 
@@ -44,3 +44,40 @@ ising-model-simulation/
 ├── main.py                 # CLI entry point
 ├── README.md               # Project documentation
 └── requirements.txt        # Python dependencies
+```
+
+## 🚀 Quickstart & Usage
+
+### 1. Setup Environment
+Clone the repository, set up a virtual environment, and install dependencies:
+
+```bash
+git clone https://github.com/srjaiswal44-png/ising-model-simulation.git
+cd ising-model-simulation
+python -m venv venv
+```
+
+Activate the environment:
+* **Windows (PowerShell):** `.\venv\Scripts\Activate.ps1`
+* **Windows (CMD):** `.\venv\Scripts\activate.bat`
+* **Mac/Linux:** `source venv/bin/activate`
+
+Install required packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run Simulation
+Run a 3D simulation with default settings ($5 \times 5 \times 5$ lattice):
+```bash
+python main.py --size 5 --dim 3 --eq-steps 1000 --meas-steps 1000
+```
+Run a **2D simulation** ($20 \times 20$ lattice):
+```bash
+python main.py --size 20 --dim 2 --eq-steps 1000 --meas-steps 1000
+```
+
+### 3. Command Line Arguments
+```bash
+python main.py --help
+```
