@@ -81,3 +81,15 @@ python main.py --size 20 --dim 2 --eq-steps 1000 --meas-steps 1000
 ```bash
 python main.py --help
 ```
+| Argument | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| `--size` | `int` | `5` | Lattice side length ($L$) |
+| `--dim` | `int` | `3` | Lattice dimension ($2$ or $3$) |
+| `--J` | `float` | `1.0` | Interaction coupling strength ($J$) |
+| `--H` | `float` | `0.0` | External magnetic field ($H$) |
+| `--eq-steps` | `int` | `1000` | Monte Carlo steps for thermal equilibrium |
+| `--meas-steps` | `int` | `1000` | Monte Carlo steps for thermodynamic measurements |
+| `--t-min` | `float` | `0.1` | Minimum temperature ($T_{\min}$) |
+| `--t-max` | `float` | `10.1` | Maximum temperature ($T_{\max}$) |
+| `--t-step` | `float` | `0.2` | Temperature increment step size |
+| `--save-plot` | `str` | `None` | Custom output path for generated plot |
